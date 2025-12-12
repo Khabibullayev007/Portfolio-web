@@ -1,0 +1,992 @@
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: Sora;
+  box-sizing: border-box;
+}
+body {
+  background-image: url("./img/pexels-felix-mittermeier-956999.jpg");
+  background-size: cover;
+}
+#logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+#logo:hover {
+  transform: scale(1.1);
+  transition: 2s;
+  box-shadow: 5px 5px 6px rgb(241, 4, 43);
+}
+.container {
+  width: 90%;
+  height: 100vh;
+  margin: 50px 100px;
+}
+nav {
+  margin-top: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #111827;
+  width: 100%;
+  padding: 15px;
+  border-radius: 20px;
+  padding-left: 10px;
+
+  transform: scale(1);
+  transition: 2s;
+}
+nav:hover {
+  transform: scale(1.05);
+  transition: 3s;
+  box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px,
+    rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px,
+    rgba(240, 46, 170, 0.05) 0px 25px;
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px,
+    rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px,
+    rgba(240, 46, 170, 0.05) 25px 25px;
+}
+
+nav > h3 {
+  font-size: 20px;
+  margin-left: -100px;
+}
+nav > ul {
+  display: flex;
+  font-size: 18px;
+  gap: 100px;
+}
+
+.btn {
+  width: 153px;
+  height: 43px;
+  border: none;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 10px;
+  transform: scale(1);
+  transition: 1s;
+}
+.btn:hover {
+  transform: scale(1.1);
+  transition: 1.5s;
+  box-shadow: 5px 5px 6px pink;
+  font-size: 20px;
+  color: black;
+  background-color: white;
+}
+li {
+  text-decoration: none;
+  list-style-type: none;
+  transform: scale(1);
+  transition: 1s;
+}
+a {
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+  scroll-behavior: smooth;
+}
+li:hover {
+  transform: scale(1.1);
+  transition: 1s;
+  cursor: pointer;
+  text-shadow: 2px 2px 3px rgb(253, 250, 250);
+  box-shadow: rgba(255, 135, 135, 0.56) 0px 22px 70px 4px;
+}
+#main_img {
+  width: 390px;
+  height: 440px;
+  transform: scale(1.1);
+  transition: 5s;
+  border-radius: 50px;
+  filter: drop-shadow(0 0 0.75rem crimson);
+}
+#main_img:hover {
+  transform: scale(1.2);
+  transition: 2s;
+}
+.main_page {
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.text {
+  background-color: #111827;
+  padding: 50px;
+  border-radius: 15px;
+  height: 520px;
+  box-sizing: border-box;
+  transform: scale(1);
+  transition: 2s;
+}
+.text:hover {
+  transform: scale(1.04);
+  transition: 2s;
+  box-shadow: rgba(255, 0, 0, 0.4) 0px 30px 90px;
+}
+.text > h2 {
+  font-size: 40px;
+  line-height: 50px;
+}
+.span1 {
+  font-weight: 400;
+  color: #fff;
+}
+.span2 {
+  font-weight: 700;
+  color: blueviolet;
+}
+.span3 {
+  color: white;
+  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black,
+    2px 2px 0 black;
+}
+.about_developing {
+  /* margin-top: 50px; */
+  width: 700px;
+  color: #fff;
+  line-height: 30px;
+  font-size: 16px;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+#Skills {
+  margin-top: 200px;
+  text-align: center;
+  font-size: 23px;
+  background-color: rgb(78, 96, 102);
+  width: 90%;
+  height: 700px;
+  padding-top: 50px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  border-radius: 20px;
+  transform: scale(1);
+  transition: 2s;
+  margin-left: 90px;
+}
+#Skills:hover {
+  transform: scale(1.04);
+  transition: 2s;
+
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4), 0 0 10px #5fed83, 0 0 20px #3094ff,
+    0 0 30px #c06eff;
+}
+#Skills > h1 {
+  color: white;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+    1px 1px 0 black;
+}
+.imgs {
+  border-radius: 20px;
+  width: 150px;
+  height: 150px;
+  transform: scale(1.1);
+  transition: 2s;
+  transform: translate(4%, -10%);
+  background-color: white;
+  padding: 20px 20px;
+}
+.imgs:hover {
+  transform: scale(1.1);
+  transition: 1s;
+  box-shadow: rgba(255, 38, 0, 0.25) 0px 30px 60px -12px,
+    rgba(242, 8, 8, 0.3) 0px 18px 36px -18px;
+}
+
+.images {
+  flex-wrap: wrap;
+  /* margin-top: 80px; */
+  padding-top: 110px;
+  line-height: 200px;
+  letter-spacing: 100px;
+}
+#About_me {
+  margin-top: 300px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 2px solid black;
+  height: 850px;
+  border-radius: 20px;
+  transform: scale(1);
+  transition: 2s;
+}
+.text2 {
+  width: 700px;
+  font-size: 16px;
+  line-height: 23px;
+}
+#About_me:hover {
+  box-shadow: rgba(250, 6, 6, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  transform: scale(1.04);
+  transition: 2s;
+  background-color: darkslateblue;
+  color: white;
+}
+#About_me:hover .text2 {
+  color: #ffffff;
+}
+
+.my_life_story > .p1 {
+  font-size: 45px;
+  font-weight: 50;
+  color: blueviolet;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+    1px 1px 0 black;
+}
+.about {
+  font-weight: 800;
+  color: #000000;
+}
+
+.about_me:hover {
+  color: #ffffff;
+  transition: 2s;
+}
+
+.img_person {
+  margin-top: 80px;
+
+  transform: scale(1);
+  transition: 2s;
+}
+.img_person:hover {
+  filter: drop-shadow(0 0 0.75rem white);
+  transform: scale(1.02);
+  transition: 2s;
+}
+
+#My_projects {
+  margin-top: 100px;
+  /* text-align: center; */
+  width: 100%;
+  height: 1400px;
+  border: #111827 5px solid;
+  color: white;
+  padding-top: 30px;
+  border-radius: 20px;
+  transform: scale(1);
+  transition: 2s;
+}
+#My_projects:hover {
+  transform: scale(1.04);
+  background-color: #111827;
+  color: white;
+  transition: 2s;
+  box-shadow: 0 0 10px #5fed83, 0 0 20px #3094ff, 0 0 30px #c06eff;
+}
+.Uzum_text {
+  width: 800px;
+  font-size: 16px;
+  color: white;
+  line-height: 30px;
+}
+.second {
+  margin-top: 150px;
+}
+.todo {
+  width: 800px;
+  font-size: 16px;
+  color: white;
+  line-height: 30px;
+}
+.third_project {
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.portfolio {
+  width: 700px;
+  font-size: 16px;
+  color: white;
+  line-height: 30px;
+  margin-top: -30px;
+}
+.portfolio>h1{
+  color: white; font-size: 40px
+}
+.project_img:hover {
+  transform: scale(1.03);
+  transition: 1s;
+  box-shadow: rgba(255, 255, 255, 0.4) 5px 5px,
+    rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px,
+    rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+.project_img {
+  transform: scale(1);
+  transition: 1s;
+}
+.My_testimonials {
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-evenly;
+}
+.span5 {
+  color: white;
+  text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black,
+    2px 2px 0 black;
+}
+.heading {
+  margin-top: 150px;
+  font-size: 40px;
+  text-align: center;
+}
+nav > h3 {
+  color: white;
+}
+nav > h3:hover {
+  transform: scale(1.03);
+  transition: 1s;
+  box-shadow: rgba(255, 255, 255, 0.4) 5px 5px,
+    rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px,
+    rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;
+}
+.uzum {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 50px;
+}
+.uzum_img {
+  width: 350px;
+  height: 200px;
+  border-radius: 20px;
+  margin-bottom: -100px;
+}
+#My_projects > h1 {
+  text-align: center;
+  color: rgb(253, 149, 3);
+}
+#project_text {
+  background-color: #111827;
+  width: 700px;
+  padding: 30px;
+  color: white;
+  border-radius: 15px;
+  transform: scale(1);
+  transition: 1s;
+}
+.portfolio {
+  margin-bottom: 0px;
+}
+#project_text:hover {
+  background-color: white;
+  color: #111827;
+  box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px,
+    rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px,
+    rgba(240, 46, 170, 0.05) 25px 25px;
+  box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px,
+    rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px,
+    rgba(240, 46, 170, 0.05) 0px 25px;
+  transform: scale(1.03);
+  transition: 1s;
+}
+footer {
+  margin-top: 100px;
+  width: 100%;
+  height: 380px;
+  background-color: #111827;
+  color: white;
+
+  box-sizing: border-box;
+  padding: 40px;
+  font-family: Cormorant Garamond;
+  font-size: 20px;
+  border-radius: 15px;
+  transform: scale(1);
+  transition: 1s;
+}
+footer>h1{
+  text-align: center;
+}
+footer:hover {
+  box-shadow: rgb(160, 206, 255) 0px 20px 30px -10px;
+
+  transform: scale(1.03);
+  transition: 2s;
+}
+#icons {
+  display: flex;
+}
+#instagram {
+  width: 200px;
+  height: 200px;
+  border: #fff 5px solid;
+  border-radius: 15px;
+  /* padding: 25px 50px; */
+  margin-top: 50px;
+  transform: scale(1);
+  transition: 1s;
+  border: #ffffff 3px solid;
+  margin-left: 200px;
+}
+
+#instagram:hover {
+  transform: scale(1.03);
+  transition: 1s;
+  background: linear-gradient(
+    45deg,
+    #feda75,
+    #fa7e1e,
+    #d62976,
+    #962fbf,
+    #4f5bd5
+  );
+  border: #d62976 3px solid;
+  color: #111827;
+  text-shadow: 0 0 4px #feda75, 0 0 8px #fa7e1e, 0 0 12px #d62976,
+    0 0 16px #962fbf, 0 0 20px #4f5bd5;
+  box-shadow: 0 0 10px #5fed83, 0 0 20px #3094ff, 0 0 30px #c06eff;
+}
+#instagram_icon {
+  width: 90px;
+  height: 90px;
+  border-radius: 15px;
+  margin-left: 50px;
+  margin-top: 30px;
+}
+#telegram {
+  width: 200px;
+  height: 200px;
+  border: #fff 5px solid;
+  border-radius: 15px;
+  /* padding: 25px 50px; */
+  margin-top: 50px;
+  transform: scale(1);
+  transition: 1s;
+  border: #ffffff 3px solid;
+  margin-left: 200px;
+}
+#telegram:hover {
+  transform: scale(1.03);
+  transition: 1s;
+  background: linear-gradient(45deg, #37aee2, #1e96c8);
+  color: #111827;
+  text-shadow: 0 0 6px #2aabee, 0 0 12px #229ed9;
+  box-shadow: 0 0 10px #5fed83, 0 0 20px #3094ff, 0 0 30px #c06eff;
+}
+
+#Github {
+  width: 200px;
+  height: 200px;
+  border: #fff 5px solid;
+  border-radius: 15px;
+  /* padding: 25px 50px; */
+  margin-top: 50px;
+  transform: scale(1);
+  transition: 1s;
+  border: #ffffff 3px solid;
+  margin-left: 200px;
+}
+#Github_icon {
+  width: 90px;
+  height: 90px;
+  border-radius: 15px;
+  margin-left: 50px;
+  margin-top: 30px;
+  transform: scale(1.05);
+  transition: 2s;
+}
+#Github:hover {
+  background-color: black;
+  transform: scale(1.03);
+  transition: 1s;
+  color: white;
+  text-shadow: 0 0 6px #5fed83, 0 0 12px #08872b;
+
+  box-shadow: 0 0 10px #5fed83, 0 0 20px #3094ff, 0 0 30px #c06eff;
+}
+#instagram > h4 {
+  margin-top: 10px;
+  margin-left: 35px;
+}
+#telegram_icon {
+  width: 90px;
+  height: 90px;
+  border-radius: 15px;
+  margin-left: 50px;
+  margin-top: 30px;
+  transform: scale(1.05);
+  transition: 2s;
+}
+#telegram > h4 {
+  margin-top: 10px;
+  margin-left: 43px;
+}
+#telegram:hover a img {
+  transform: scale(1.05);
+  transition: 2s;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+#Github > h4 {
+  margin-top: 10px;
+  margin-left: 55px;
+}
+#Github:hover a img {
+  transform: scale(1.05);
+  transition: 2s;
+  box-shadow: 0 0 10px #5fed83, 0 0 20px #3094ff, 0 0 30px #c06eff;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    padding: 0px;
+    margin: 0px;
+    margin: 50px 50px;
+  }
+  nav {
+    width: 1050px;
+    margin-top: 50px;
+    margin-left: 40px;
+    #logo {
+      margin-left: -10px;
+    }
+    .btn {
+      width: 125px;
+      height: 37px;
+      font-size: 15px;
+    }
+    h3 {
+      font-size: 17px;
+      margin-left: 20px;
+    }
+
+    ul > li {
+      font-size: 15px;
+    }
+  }
+  .text {
+    padding: 0px;
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 700px;
+    height: 450px;
+
+    box-sizing: border-box;
+  }
+
+  .main_page {
+    margin-left: 50px;
+  }
+  .main_page > .text > h2 > span {
+    font-size: 24px;
+  }
+  .text {
+    width: 1050px;
+    height: 470px;
+  }
+  .about_developing {
+    width: 450px;
+    height: 430px;
+    font-size: 13px;
+  }
+  #main_img {
+    margin-left: 120px;
+    width: 345px;
+    height: 380px;
+  }
+  #Skills {
+    width: 1100px;
+    margin-left: -0px;
+  }
+  #About_me {
+    width: 1100px;
+    font-size: 14px;
+
+    .text2 {
+      width: 400px;
+      font-size: 12px;
+    }
+  }
+  #My_projects {
+    width: 1100px;
+  }
+  .todo_img {
+    width: 150px;
+    height: 100px;
+    margin-top: 70px;
+    margin-right: 40px;
+  }
+  #project_text {
+    font-size: 13px;
+    width: 610px;
+    height: 200px;
+    margin-left: 60px;
+    padding: 0px;
+    padding: 22px 17px;
+  }
+  .Uzum_text > h1 {
+    margin-left: 70px;
+  }
+
+  .uzum_img {
+    width: 0px;
+    height: 00px;
+    margin-left: 40px;
+  }
+  .todo > h1 {
+    margin-left: 60px;
+  }
+  .portfolio > h1 {
+    margin-left: 60px;
+  }
+
+  #Contact {
+    width: 1100px;
+    height: 330px;
+  }
+  #instagram {
+    /* padding: 0px;
+  width: 180px;
+  height: 190px; */
+    width: 190px;
+    margin: 0px;
+  }
+  #telegram {
+    width: 190px;
+    margin: 0px;
+  }
+
+  #Github {
+    width: 190px;
+    margin: 0px;
+  }
+  #instagram_icon {
+    width: 65px;
+    height: 65px;
+  }
+  #telegram_icon {
+    width: 65px;
+    height: 65px;
+  }
+  #Github_icon {
+    width: 65px;
+    height: 65px;
+  }
+  #Github > h4 {
+    font-size: 16px;
+    margin-top: 25px;
+    margin-left: 53px;
+  }
+  #telegram > h4 {
+    font-size: 16px;
+    margin-top: 25px;
+    margin-left: 40px;
+  }
+  #instagram > h4 {
+    font-size: 16px;
+    margin-top: 25px;
+    margin-left: 35px;
+  }
+  #icons {
+    gap: 250px;
+    box-sizing: border-box;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0px;
+    margin: 0px;
+    margin: 50px 50px;
+  }
+  nav {
+    width: 920px;
+    margin-top: 30px;
+    margin-left: 10px;
+    #logo {
+      margin-left: 5px;
+    }
+    .btn {
+      width: 105px;
+      height: 35px;
+      font-size: 13px;
+      margin-left: 15px;
+    }
+    h3 {
+      font-size: 18xpx;
+      margin-right: 35px;
+    }
+    ul {
+      width: 500px;
+    }
+    ul > li > a {
+      width: auto;
+      font-size: 13px;
+      white-space: nowrap;
+      margin-left: -5px;
+    }
+  }
+  .text {
+    padding: 0px;
+    padding-top: 30px;
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 430px;
+    height: 575px;
+    margin-left: -50px;
+    box-sizing: border-box;
+  }
+  .about_developing {
+    font-size: 13px;
+    width: 350px;
+  }
+
+  h2 > span {
+    font-size: 22px;
+    white-space: nowrap;
+    height: 50px;
+    line-height: 0.9;
+  }
+  #main_img {
+    width: 340px;
+    height: 400px;
+    margin: 0px;
+    margin-left: 20px;
+  }
+  #Skills {
+    width: 925px;
+  }
+  .imgs {
+    width: 130px;
+    height: 130px;
+  }
+  #About_me {
+    width: 925px;
+    font-size: 14px;
+  }
+  .img_person {
+    width: 400px;
+  }
+  #My_projects {
+    width: 925px;
+  }
+  .uzum_img {
+    width: 300px !important;
+    height: 180px !important;
+  }
+  .todo_img {
+    width: 250px !important;
+    height: 250px !important;
+  }
+  #project_text {
+    width: 500px;
+    font-size: 13px;
+    padding: 0px;
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+  .portfolio_img {
+    width: 220px !important;
+    height: 250px !important;
+    margin-left: 30px;
+  }
+  .portfolio {
+    margin-left: 80px;
+  }
+
+  #Contact {
+    width: 925px;
+    margin: 0px;
+    margin-top: 50px;
+  }
+  #instagram {
+    /* padding: 0px;
+    width: 180px;
+    height: 190px; */
+    width: 190px;
+    margin: 0px;
+  }
+  #telegram {
+    width: 190px;
+    margin: 0px;
+    height: 170px;
+    margin-top: 10px;
+  }
+
+  #Github {
+    width: 190px;
+    margin: 0px;
+  }
+  #instagram_icon {
+    width: 60px;
+    height: 60px;
+    margin-left: 45px;
+  }
+  #telegram_icon {
+    width: 60px;
+    height: 60px;
+    margin-left: 45px;
+  }
+  #Github_icon {
+    width: 60px;
+    height: 60px;
+    margin-left: 45px;
+  }
+  #Github > h4 {
+    font-size: 16px;
+    margin-top: 25px;
+    margin-left: 45px;
+  }
+  #telegram > h4 {
+    font-size: 16px;
+    margin-top: 25px;
+    margin-left: 30px;
+  }
+  #instagram > h4 {
+    font-size: 16px;
+    margin-top: 25px;
+    margin-left: 30px;
+  }
+  #icons {
+    gap: 190px;
+    box-sizing: border-box;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0px;
+    margin: 0px;
+  }
+  nav {
+    width: 101%;
+    margin-left: 38px;
+  }
+
+  .text {
+    width: 400px;
+  }
+  .text > .span {
+    font-size: 10px;
+    line-height: 1;
+  }
+
+  .main_page {
+    margin-left: 70px;
+  }
+
+  #main_img {
+    width: 255px;
+    height: 300px;
+    margin-left: 50px;
+  }
+  #Skills {
+    width: 700px;
+    padding: 25px 25px;
+    margin-left: 33px;
+  }
+  .project_img {
+    width: 150px !important;
+    height: 150px !important;
+  }
+  .uzum_img {
+    width: 200px !important;
+    height: 100px !important;
+  }
+  li > :first-child {
+    margin-left: 10px;
+  }
+  ul {
+    margin-left: 30px;
+  }
+  ul > li {
+    margin-left: -56px;
+  }
+  #About_me {
+    width: 700px;
+    margin-left: 33px;
+    margin-top: -1px;
+    margin-top: 50px;
+  }
+  #My_projects {
+    width: 700px;
+    margin-left: 33px;
+  }
+
+  #project_text {
+    width: 390px;
+    margin-left: 30px;
+    font-size: 11px;
+  }
+
+  #Contact {
+    width: 700px;
+    height: 200px;
+    margin-left: 33px;
+  }
+  .img_person {
+    width: 200px;
+    height: 200px;
+  }
+  .images > .imgs {
+    width: 80px;
+    height: 80px;
+  }
+
+  #instagram {
+    width: 120px;
+    height: 90px;
+  }
+  #telegram {
+    width: 120px;
+    height: 90px;
+    margin: 0px;
+  }
+  #instagram > h4 {
+    display: none;
+  }
+  #telegram > h4 {
+    display: none;
+  }
+  #Github > h4 {
+    display: none;
+  }
+  #Contact > h1 {
+    font-size: 15px;
+  }
+
+  #instagram_icon {
+    width: 40px;
+    height: 40px;
+    margin: 0px;
+    margin-left: 19px;
+    margin-top: 17px;
+  }
+  #telegram_icon {
+    width: 40px;
+    height: 40px;
+    margin: 0px;
+    margin-left: 19px;
+    margin-top: 17px;
+  }
+  #Github {
+    width: 120px;
+    height: 90px;
+  }
+  #Github_icon {
+    width: 40px;
+    height: 40px;
+    margin: 0px;
+    margin-left: 19px;
+    margin-top: 17px;
+  }
+}
+/* && #telegram_icon && #Github_icon */
