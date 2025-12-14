@@ -10,6 +10,7 @@ html {
 body {
   background-image: url("./img/pexels-felix-mittermeier-956999.jpg");
   background-size: cover;
+  
 }
 #logo {
   width: 50px;
@@ -314,8 +315,9 @@ li:hover {
   line-height: 30px;
   margin-top: -30px;
 }
-.portfolio>h1{
-  color: white; font-size: 40px
+.portfolio > h1 {
+  color: white;
+  font-size: 40px;
 }
 .project_img:hover {
   transform: scale(1.03);
@@ -408,7 +410,7 @@ footer {
   transform: scale(1);
   transition: 1s;
 }
-footer>h1{
+footer > h1 {
   text-align: center;
 }
 footer:hover {
@@ -859,6 +861,9 @@ footer:hover {
     box-sizing: border-box;
     margin-top: 20px;
   }
+  #About_me{
+    margin-top:200px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -989,4 +994,3 @@ footer:hover {
     margin-top: 17px;
   }
 }
-/* && #telegram_icon && #Github_icon */
