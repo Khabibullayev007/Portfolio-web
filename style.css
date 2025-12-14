@@ -10,7 +10,6 @@ html {
 body {
   background-image: url("./img/pexels-felix-mittermeier-956999.jpg");
   background-size: cover;
-  
 }
 #logo {
   width: 50px;
@@ -40,6 +39,23 @@ nav {
 
   transform: scale(1);
   transition: 2s;
+}
+.menu-icon {
+  display: none; /* hidden on desktop */
+  width: 30px;
+  cursor: pointer;
+  margin: 20px;
+}
+footer > a {
+  display: none;
+}
+
+.menu-icon span {
+  display: block;
+  height: 3px;
+  background: white;
+  margin: 6px 0;
+  transition: 0.3s;
 }
 nav:hover {
   transform: scale(1.05);
@@ -861,8 +877,8 @@ footer:hover {
     box-sizing: border-box;
     margin-top: 20px;
   }
-  #About_me{
-    margin-top:200px;
+  #About_me {
+    margin-top: 200px;
   }
 }
 
@@ -994,3 +1010,4 @@ footer:hover {
     margin-top: 17px;
   }
 }
+
