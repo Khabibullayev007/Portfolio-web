@@ -16,6 +16,10 @@ body {
   height: 50px;
   border-radius: 50%;
 }
+.navbar > h3{
+  margin-left: 10px;
+  font-size: 26px;
+}
 #logo:hover {
   transform: scale(1.1);
   transition: 2s;
@@ -26,26 +30,27 @@ body {
   height: 100vh;
   margin: 50px 100px;
 }
+
 nav {
   margin-top: -10px;
   display: flex;
   align-items: center;
   justify-content: space-around;
   background-color: #111827;
-  width: 100%;
+  width: 80%;
   padding: 15px;
   border-radius: 20px;
   padding-left: 10px;
-
+margin-left: 150px;
   transform: scale(1);
   transition: 2s;
 }
-.menu-icon {
+/* .menu-icon {
   display: none; /* hidden on desktop */
-  width: 30px;
+  /* width: 30px;
   cursor: pointer;
   margin: 20px;
-}
+} */ 
 footer > a {
   display: none;
 }
@@ -58,8 +63,25 @@ footer > a {
   transition: 0.3s;
 }
 nav:hover {
+  li>a{
+    color: rgb(193, 66, 252);
+  }
+  h3{
+    color: green;
+  }
+  .btn{
+    color: white;
+    background-color: #111827;
+
+  }
+  .btn:hover{
+    color: white;
+    background-color: green;
+  }
   transform: scale(1.05);
   transition: 3s;
+  background-color: white;
+  
   box-shadow: rgba(240, 46, 170, 0.4) 0px 5px, rgba(240, 46, 170, 0.3) 0px 10px,
     rgba(240, 46, 170, 0.2) 0px 15px, rgba(240, 46, 170, 0.1) 0px 20px,
     rgba(240, 46, 170, 0.05) 0px 25px;
@@ -82,8 +104,8 @@ nav > ul {
   width: 153px;
   height: 43px;
   border: none;
-  background-color: #000000;
-  color: #ffffff;
+  background-color: white ;
+  color: #000000;
   border-radius: 10px;
   transform: scale(1);
   transition: 1s;
@@ -93,8 +115,7 @@ nav > ul {
   transition: 1.5s;
   box-shadow: 5px 5px 6px pink;
   font-size: 20px;
-  color: black;
-  background-color: white;
+ 
 }
 li {
   text-decoration: none;
@@ -105,15 +126,18 @@ li {
 a {
   text-decoration: none;
   list-style-type: none;
-  color: white;
+  color: white ;
   scroll-behavior: smooth;
+}
+a:hover{
+  text-shadow: #111827 ;
 }
 li:hover {
   transform: scale(1.1);
   transition: 1s;
   cursor: pointer;
   text-shadow: 2px 2px 3px rgb(253, 250, 250);
-  box-shadow: rgba(255, 135, 135, 0.56) 0px 22px 70px 4px;
+  box-shadow: rgba(255, 6, 6, 0.651) 0px 22px 70px 4px;
 }
 #main_img {
   width: 390px;
@@ -146,8 +170,21 @@ li:hover {
 .text:hover {
   transform: scale(1.04);
   transition: 2s;
+  background-color: white;
+  color: #111827;
   box-shadow: rgba(255, 0, 0, 0.4) 0px 30px 90px;
+  .about_developing{
+    
+    color: #111827;
+  }
+  .span2{
+    color: green;
+  }
+  .span1{
+    color: #111827;
+  }
 }
+
 .text > h2 {
   font-size: 40px;
   line-height: 50px;
@@ -431,9 +468,24 @@ footer > h1 {
 }
 footer:hover {
   box-shadow: rgb(160, 206, 255) 0px 20px 30px -10px;
-
+background-color: rgb(244, 242, 242);
   transform: scale(1.03);
   transition: 2s;
+  #instagram{
+    border: 4px solid #111827;
+  }
+  #telegram{
+    border: 4px solid #111827;
+  }
+  #Github{
+    border: 4px solid #111827;
+  }
+  h4{
+    color: #111827;
+  }
+  h1{
+    color: #111827;
+  }
 }
 #icons {
   display: flex;
