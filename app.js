@@ -1,3 +1,4 @@
+
 const reveals = document.querySelectorAll("#Skills");
 
 window.addEventListener("scroll", () => {
@@ -27,14 +28,27 @@ window.addEventListener("scroll", () => {
   });
 });
 
-const hero = document.querySelector(".main_page");
+if (window.matchMedia("(hover: hover)").matches) {
+  document.addEventListener("mousemove", mouseMoveEffect);
+}
 
-document.addEventListener("mousemove", (e) => {
+function mouseMoveEffect(e) {
   const x = (e.clientX / window.innerWidth - 0.5) * 20;
   const y = (e.clientY / window.innerHeight - 0.5) * 20;
-
   hero.style.transform = `translate(${x}px, ${y}px)`;
-});
+}
+
+if (window.innerWidth > 768) {
+  document.addEventListener("mousemove", mouseMoveEffect);
+} else {
+  document.removeEventListener("mousemove", mouseMoveEffect);
+  hero.style.transform = "translate(0, 0)";
+}
+
+
+
+
+
 
 
 
