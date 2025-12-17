@@ -1,0 +1,67 @@
+#About_me {
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 2px solid black;
+    height: 850px;
+    border-radius: 20px;
+    transform: scale(1);
+    transition: 2s;
+  }
+  .text2 {
+    width: 700px;
+    font-size: 16px;
+    line-height: 23px;
+  }
+  #About_me:hover {
+    box-shadow: rgba(250, 6, 6, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    transform: scale(1.04);
+    transition: 2s;
+    background-color: darkslateblue;
+    color: white;
+  }
+  #About_me:hover .text2 {
+    color: #ffffff;
+  }
+  
+  .my_life_story > .p1 {
+    font-size: 45px;
+    font-weight: 50;
+    color: blueviolet;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+      1px 1px 0 black;
+  }
+  .about {
+    font-weight: 800;
+    color: #000000;
+  }
+  
+  .about_me:hover {
+    color: #ffffff;
+    transition: 2s;
+  }
+  
+  .img_person {
+    margin-top: 80px;
+  
+    transform: scale(1);
+    transition: 2s;
+  }
+  .img_person:hover {
+    filter: drop-shadow(0 0 0.75rem white);
+    transform: scale(1.02);
+    transition: 2s;
+  }
+
+#About_me {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 1.5s ease;
+}
+
+#About_me.active {
+  opacity: 1;
+  transform: translateY(0);
+}

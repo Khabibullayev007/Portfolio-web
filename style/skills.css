@@ -1,0 +1,72 @@
+#Skills {
+    margin-top: 200px;
+    text-align: center;
+    font-size: 23px;
+  
+    background-color: rgb(78, 96, 102);
+    width: 90%;
+    height: 700px;
+    padding-top: 50px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+      rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-radius: 20px;
+    transform: scale(1);
+    transition: 2s;
+    margin-left: 90px;
+  }
+  #Skills:hover {
+    transform: scale(2.1);
+    transition: 2s;
+  
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4), 0 0 10px #5fed83, 0 0 20px #3094ff,
+      0 0 30px #c06eff;
+  }
+  #Skills > h1 {
+    color: white;
+    text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black,
+      1px 1px 0 black;
+  }
+  .imgs {
+    border-radius: 20px;
+    width: 150px;
+    height: 150px;
+    transform: scale(1.1);
+    transition: 2s;
+    transform: translate(4%, -10%);
+    background-color: white;
+    padding: 20px 20px;
+  }
+  .imgs:hover {
+    transform: scale(1.1);
+    transition: 1s;
+    box-shadow: rgba(255, 38, 0, 0.25) 0px 30px 60px -12px,
+      rgba(242, 8, 8, 0.3) 0px 18px 36px -18px;
+  }
+  
+  .images {
+    flex-wrap: wrap;
+    /* margin-top: 80px; */
+    padding-top: 110px;
+    line-height: 200px;
+    letter-spacing: 100px;
+  }
+#Skills {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 1.5s ease;
+  }
+  
+  #Skills.active {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .imgs {
+    transform-style: preserve-3d;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+  }
+  
+  .imgs:hover {
+    transform: rotateX(8deg) rotateY(-8deg) scale(1.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+  }
