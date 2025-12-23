@@ -543,7 +543,7 @@ margin-top: 20px !important;
 
   .picture {
     position: absolute;
-    margin-left: 2px;
+    margin-left: 13px !important;
     margin-top: -1500px;
     left: -55px;
   }
@@ -557,7 +557,7 @@ margin-top: 20px !important;
   }
   #Skills {
     width: 600px !important;
-   margin-left: 7px !important;
+   margin-left: 25px !important;
   }
   .images {
     margin-top: -60px;
@@ -568,7 +568,7 @@ margin-top: 20px !important;
     height: 1300px !important;
     padding-left: 30px;
     display: block !important;
-    margin-left: 7px;
+    margin-left: 25px !important;
     margin-top: 120px !important;
   }
   .img_person {
@@ -630,13 +630,14 @@ margin-left: -50px !important;
     margin-left: 7px !important;
     background: transparent !important;
     border: 5px solid #111827;
+    margin-left: 30px !important ;
   }
   #icons{
-
+   
   
   display: block !important;
   flex-direction: column !important;
-margin-left: 150px !important;
+margin-left: 160px !important;
   }
   #instagram{
     margin-left: 30px !important;
@@ -651,12 +652,13 @@ margin-left: 150px !important;
    
   }
   .resume .btn{
-    width: 200px;
-    height: 150px;
-    font-size: 25px;
+    width: 150px;
+    height: 130px;
+    font-size: 20px;
     background: transparent;
     color: white;
     border: 5px solid white;
+    margin-left: 30px !important;
   }
   .btn:hover{
     color: white;
